@@ -1,7 +1,10 @@
 <template>
 	<Header>
 		<div class="HeaderLeft">
-			<i class="el-icon-back"></i>
+			<i
+					class="el-icon-back"
+					@click="back"
+			></i>
 			<i class="el-icon-right"></i>
 		</div>
 		<div class="headerRight">
@@ -16,7 +19,11 @@
 
 <script>
 	export default {
-
+		methods: {
+			back() {
+				this.$router.go(-1)
+			}
+		}
 	}
 </script>
 

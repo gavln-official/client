@@ -1,8 +1,11 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div id="app">
-      <router-view/>
-    </div>
+    <keep-alive>
+      <div id="app">
+        <router-view/>
+      </div>
+    </keep-alive>
+
   </transition>
 </template>
 
@@ -12,7 +15,7 @@ export default {
   components: {
   },
   mounted(){
-   
+
   }
 }
 </script>
