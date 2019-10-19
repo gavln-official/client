@@ -12,7 +12,10 @@
 				<img src="../assets/pepple.jpg">
 			</el-avatar>
 			<span>猪猪</span>
-			<i class="el-icon-key"></i>
+			<router-link to="/login">
+				<i class="el-icon-key"></i>
+			</router-link>
+		
 		</div>
 	</Header>
 </template>

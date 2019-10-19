@@ -13,14 +13,12 @@
 export default {
   name: 'app',
   components: {
-  },
-  mounted(){
-
   }
 }
 </script>
 
 <style lang="scss">
+  @import "@/style/reset.scss";
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;
   }
