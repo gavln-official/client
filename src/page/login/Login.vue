@@ -21,6 +21,8 @@
 </template>
 
 <script>
+  import loginAPi from '@/api/login'
+  import router from '../../router'
   export default {
     data() {
       return {
@@ -31,7 +33,15 @@
     methods: {
       login() {
         // eslint-disable-next-line no-console
-        console.log(this.password)
+        loginAPi.login({
+          userName: this.userName,
+          password: this.password
+        }).then(res => {
+          if(res.success) {
+            this.$message.success(res.message)
+            router.push('/')
+          }
+        })
       }
     }
   }
