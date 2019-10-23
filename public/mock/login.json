@@ -1,5 +1,5 @@
 {
-  "success": true,
-  "message": "登录成功",
+  "code": 0,
+  "msg": "ok",
   "data": null
 }
