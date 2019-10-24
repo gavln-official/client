@@ -1,12 +1,21 @@
 export default {
     welcomeBack: '欢迎回来',
+    welcomeJoin: '欢迎加入',
     service: '服务',
     privacy: '隐私',
     signUp: '去注册',
     signIn: '登录账户',
     regist: '注册',
+    userName: '用户名',
+    email: '邮箱',
     forgotPassword: '忘记密码？',
     userNameOrEmail: '用户名/邮箱',
     password: '密码',
     introduce: '介绍',
+    enterPassword: '请输入密码',
+    enterEmailAddress:'请输入邮箱地址',
+    enterUserName:'请输入用户名',
+    passwordFormatInvalid: '密码格式无效',
+    enterCorrectEmailAddress:'请输入正确的邮箱地址',
+    successLogin:'登录成功'
 }

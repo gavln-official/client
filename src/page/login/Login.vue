@@ -86,7 +86,7 @@ export default {
 
       .title {
         text-align: center;
-        padding-top: 20px;
+        padding-top: 60px;
         padding-bottom: 20px;
         color: #ffffff;
         font-size: 20px;
@@ -107,7 +107,7 @@ export default {
         .logonInfo {
           color: #ffffff;
           font-size: 12px;
-          margin-top: 30px;
+          margin-top: 40px;
           cursor: pointer;
         }
         .logonInfo {

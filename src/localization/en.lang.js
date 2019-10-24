@@ -1,12 +1,21 @@
 export default {
     welcomeBack: 'Welcome back',
+    welcomeJoin: 'Welcome to join',
     service: 'Service',
     privacy: 'Privacy',
     signUp: 'Sign up',
     signIn: 'Sign in',
     regist: 'Regist',
+    userName: 'UserName',
+    email: 'Email',
     forgotPassword: 'Forgot password?',
     userNameOrEmail: 'Username or Email',
-    password: 'password',
+    password: 'Password',
     introduce: 'Introduce',
+    enterPassword: 'Please enter your password',
+    enterEmailAddress: 'Please enter email address',
+    enterUserName: 'Please enter user name',
+    passwordFormatInvalid: 'Password format invalid',
+    enterCorrectEmailAddress: 'Please enter the correct email address',
+    successLogin: 'Success login'
 }
