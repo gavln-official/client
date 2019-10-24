@@ -1,22 +1,22 @@
 <template>
   <div class="main">
     <div class="head">
-      <span>产品介绍</span>
-      <span>CN/EN</span>
-      <span>注册</span>
+      <router-link to="/introduce" tag="span">{{$t('introduce')}}</router-link>
+      <span>ZH/EN</span>
+      <router-link to="/register" tag="span">{{$t('regist')}}</router-link>
     </div>
     <div class="body">
       <div class="login">
-        <h2 class="title">欢迎回来</h2>
+        <h2 class="title">{{$t('welcomeBack')}}</h2>
         <div class="loginForm">
-          <el-input placeholder="用户名/邮箱" v-model="userName"></el-input>
-          <el-input placeholder="密码" type="password" v-model="password" :show-password="true"></el-input>
+          <el-input :placeholder="$t('userNameOrEmail')" v-model="userName"></el-input>
+          <el-input :placeholder="$t('password')" type="password" v-model="password" :show-password="true"></el-input>
           <p class="logonInfo">
-            <span class="forgetPassword">忘记密码？</span>
-            <router-link to="/register" tag="span">去注册</router-link>
+            <span class="forgetPassword">{{$t('forgotPassword')}}</span>
+            <router-link to="/register" tag="span">{{$t('signUp')}}</router-link>
           </p>
           <p class="goLogin">
-            <span @click="login">登录账户</span>
+            <span @click="login">{{$t('signIn')}}</span>
             <i class="el-icon-right"></i>
           </p>
         </div>
@@ -25,8 +25,8 @@
     </div>
 
     <div class="foot">
-      <router-link to="/service" tag="span">服务</router-link>
-      <router-link to="/privacy" tag="span">隐私</router-link>
+      <router-link to="/service" tag="span">{{$t('service')}}</router-link>
+      <router-link to="/privacy" tag="span">{{$t('privacy')}}</router-link>
     </div>
   </div>
 </template>
@@ -72,6 +72,7 @@ export default {
 
     span {
       margin: 15px;
+      cursor: pointer;
     }
   }
 
@@ -126,6 +127,7 @@ export default {
     margin: 100px 0 0 540px;
     span {
       margin: 10px;
+      cursor: pointer;
     }
   }
 }

@@ -127,6 +127,11 @@ export const routes = [
 		path: '/privacy',
 		name:'privacy',
 		component : () => import('@/components/Privacy.vue')
+	},
+	{
+		path: '/introduce',
+		name:'introduce',
+		component : () => import('@/components/Introduce.vue')
 	}
 
 ]
