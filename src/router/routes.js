@@ -117,6 +117,16 @@ export const routes = [
 		path: '*',
 		name: 'notfound',
 		component: () => import('@/NotFound.vue')
+	},
+	{
+		path: '/service',
+		name:'service',
+		component : () => import('@/components/Service.vue')
+	},
+	{
+		path: '/privacy',
+		name:'privacy',
+		component : () => import('@/components/Privacy.vue')
 	}
 
 ]
