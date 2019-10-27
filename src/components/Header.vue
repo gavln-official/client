@@ -21,7 +21,13 @@
 </template>
 
 <script>
+	import loginApi from '@/api/login'
 	export default {
+		mounted() {
+			loginApi.getUseInfo().then(res => {
+				console.log(res)
+			})
+		},
 		methods: {
 			back() {
 				this.$router.go(-1)

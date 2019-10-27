@@ -114,11 +114,6 @@ export const routes = [
 		component: () => import('@/page/register/Register')
 	},
 	{
-		path: '*',
-		name: 'notfound',
-		component: () => import('@/NotFound.vue')
-	},
-	{
 		path: '/service',
 		name:'service',
 		component : () => import('@/components/Service.vue')
@@ -132,6 +127,11 @@ export const routes = [
 		path: '/introduce',
 		name:'introduce',
 		component : () => import('@/components/Introduce.vue')
-	}
+	},
+	{
+		path: '*',
+		name: 'notfound',
+		component: () => import('@/NotFound.vue')
+	},
 
 ]

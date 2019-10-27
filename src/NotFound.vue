@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是404
+    哎呀服务器开小差了
   </div>
 </template>
 
