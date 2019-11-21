@@ -1,137 +1,124 @@
-import Main from '@/components/Main'
-export const routes = [
-	{
+import Home from '@/pages/home/Home'
+import Layout from '@/components/Layout'
+
+export const routes = [{
 		path: '/',
-		name: 'main',
-		component: Main
+		name: 'Home',
+		component: Home
 	},
 	{
 		path: '/all',
 		meta: {
 			title: '全部文件'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'allFile',
-				name: 'allFile',
-				component: () => import('@/page/all/All.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'allFile',
+			name: 'allFile',
+			component: () => import('@/pages/all/All')
+		}]
 	},
 	{
 		path: '/collection',
 		meta: {
 			title: '我的收藏'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'collection',
-				name: 'collection',
-				component: () => import('@/page/collection/Collection.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'collection',
+			name: 'collection',
+			component: () => import('@/pages/collection/Collection')
+		}]
 	},
 	{
 		path: '/uploading',
 		meta: {
 			title: '正在上传'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'upload',
-				name: 'upload',
-				component: () => import('@/page/upload/Upload.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'upload',
+			name: 'upload',
+			component: () => import('@/pages/upload/Upload')
+		}]
 	},
 	{
 		path: '/downloading',
 		meta: {
 			title: '我的下载'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'download',
-				name: 'download',
-				component: () => import('@/page/download/Download.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'download',
+			name: 'download',
+			component: () => import('@/pages/download/Download')
+		}]
 	},
 	{
 		path: '/transmission',
 		meta: {
 			title: '传输完成'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'transmission',
-				name: 'transmission',
-				component: () => import('@/page/transmission/Transmission.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'transmission',
+			name: 'transmission',
+			component: () => import('@/pages/transmission/Transmission')
+		}]
 	},
 	{
 		path: '/myShare',
 		meta: {
 			title: '我的分享'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'share',
-				name: 'share',
-				component: () => import('@/page/share/Share.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'share',
+			name: 'share',
+			component: () => import('@/pages/share/Share')
+		}]
 	},
 	{
 		path: '/recycle',
 		meta: {
 			title: '回收站'
 		},
-		component: Main,
-		children: [
-			{
-				path: 'recycle',
-				name: 'recycle',
-				component: () => import('@/page/recycle/Recycle.vue')
-			}
-		]
+		component: Layout,
+		children: [{
+			path: 'recycle',
+			name: 'recycle',
+			component: () => import('@/pages/recycle/Recycle')
+		}]
 	},
+
 	{
 		path: '/login',
 		name: 'login',
-		component: () => import('@/page/login/Login')
+		component: () => import('@/pages/login/Login')
 	},
 	{
 		path: '/register',
 		name: 'register',
-		component: () => import('@/page/register/Register')
+		component: () => import('@/pages/register/Register')
 	},
 	{
 		path: '/service',
-		name:'service',
-		component : () => import('@/components/Service.vue')
+		name: 'service',
+		component: () => import('@/components/Service')
 	},
 	{
 		path: '/privacy',
-		name:'privacy',
-		component : () => import('@/components/Privacy.vue')
+		name: 'privacy',
+		component: () => import('@/components/Privacy')
 	},
 	{
 		path: '/introduce',
-		name:'introduce',
-		component : () => import('@/components/Introduce.vue')
+		name: 'introduce',
+		component: () => import('@/components/Introduce')
 	},
 	{
 		path: '*',
 		name: 'notfound',
-		component: () => import('@/NotFound.vue')
+		component: () => import('@/NotFound')
 	},
-
 ]

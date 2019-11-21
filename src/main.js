@@ -4,7 +4,9 @@ import VueCookies from 'vue-cookies'
 import App from './App.vue'
 import router from './router'
 import store from '@/vuex'
-import {i18n} from './localization/_i18n'
+import {
+  i18n
+} from './localization/_i18n'
 import 'normalize.css'
 
 
